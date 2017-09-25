@@ -413,6 +413,110 @@ nav {
     .portfolio .images li > div:hover {
       opacity: 1; }
 
+.prices .container {
+  max-width: 1185px;
+  margin: auto;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 50px; }
+  .prices .container .borderBlock {
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 450px;
+    height: 80px;
+    border: 2px solid #fff; }
+    .prices .container .borderBlock h2 {
+      margin-top: 28px;
+      margin-left: 5px;
+      text-align: center;
+      text-transform: none; }
+    .prices .container .borderBlock .square {
+      position: absolute;
+      margin-top: -14px;
+      margin-left: 330px; }
+  .prices .container p {
+    color: #fff;
+    font-family: HelveticaNeue;
+    font-size: 16px;
+    margin-bottom: 100px;
+    text-align: center; }
+  .prices .container .pricesBlock {
+    display: flex; }
+    .prices .container .pricesBlock li {
+      height: 520px;
+      width: 280px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .prices .container .pricesBlock li > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #1f1f1e;
+        background: #f6f6f6;
+        height: 468px;
+        width: 248px;
+        border: 1px solid #f6f6f6;
+        transition: all 150ms ease-in-out;
+        cursor: pointer; }
+        .prices .container .pricesBlock li > div h4 {
+          font-size: 18px;
+          color: inherit;
+          font-family: Orkney;
+          text-transform: uppercase;
+          margin: 0;
+          margin-bottom: 25px; }
+        .prices .container .pricesBlock li > div h3 {
+          font-size: 66px;
+          color: inherit;
+          margin: 0; }
+        .prices .container .pricesBlock li > div h5 {
+          color: inherit;
+          font-size: 16px;
+          font-family: Orkney;
+          margin: 0;
+          margin-top: 10px; }
+        .prices .container .pricesBlock li > div p {
+          color: inherit;
+          font-family: HelveticaNeue;
+          font-size: 16px;
+          margin: 6px 0; }
+        .prices .container .pricesBlock li > div hr {
+          width: 66px;
+          margin: auto;
+          margin: 25px 0;
+          border-bottom: 1px solid #000;
+          transition: all 150ms ease-in-out; }
+        .prices .container .pricesBlock li > div a {
+          color: inherit;
+          font-size: 18px;
+          font-family: Orkney;
+          text-transform: uppercase;
+          text-decoration: underline;
+          margin-top: 50px; }
+        .prices .container .pricesBlock li > div a:hover {
+          text-decoration: none; }
+      .prices .container .pricesBlock li div:hover {
+        background: #1f1f1f;
+        color: #fff;
+        height: 518px;
+        width: 278px; }
+        .prices .container .pricesBlock li div:hover hr {
+          border-bottom: 1px solid #fff; }
+  .prices .container > span {
+    font-size: 24px;
+    font-family: 'OROSKO';
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    left: 150px;
+    top: 70px;
+    background: #1b1b19;
+    width: 70px;
+    text-align: center; }
+
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   background: #323232;
