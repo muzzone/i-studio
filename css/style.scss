@@ -448,7 +448,75 @@ body{
 	}
 }
 ////portfolio end////
+.clients{
+	.borderBlock{
+	    margin: auto;
+		margin-top: 140px;
+		margin-bottom: 50px;
+		width: 450px;
+		height: 80px;
+		border: 2px solid #fff;
+		h2{
+		    margin-top: 28px;
+		    margin-left: 5px;
+		    text-align: center;
+		    text-transform: none;
+		}
+		.square{
+			position: absolute;
+			margin-top: -14px;
+			margin-left: 330px;
+		}
+	}
+	.brands{
+		margin-top: 80px;
+		width: 100%;
+		min-height: 140px;
+		border-top: solid #fff;
+		border-bottom: solid #fff;
+		background:#111110;
+		.centerer{
+			max-width: 1180px;
+			margin: auto;
+			display: flex;
+			justify-content: space-around;
+			align-items:center;
+			height: auto;
+			min-height: 140px;
+		}
+	}
+	.container{
+		min-height: 580px;
+		background-image: url('../img/background2.png');
+		background-position: top center;
+		background-repeat:no-repeat;
+		background-size: cover;
+	}
+	h3{
+		margin-top: 130px;
+		font-size: 36px;
+		font-family: OROSKO;
+		color: #fff;
+		text-align: center;
+	}
+	h4{
+		margin:auto;
+		margin-top: 56px;
+		font-size: 30px;
+		color: #c8c7c7;
+		text-align: center;
+		font-family: Orkney;
+		max-width: 1180px;
 
+	}
+	p{
+		margin-top: 50px;
+		color: #999898;
+		text-align: center;
+		font-family: Orkney;
+		font-size: 18px;
+	}
+}
 .prices{
 	.container{
 		max-width: 1185px;
