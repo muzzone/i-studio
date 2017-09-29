@@ -450,8 +450,10 @@ body{
 ////portfolio end////
 .clients{
 	.borderBlock{
+		position:relative;
+		top: 50px;
 	    margin: auto;
-		margin-top: 140px;
+		margin-top: 90px;
 		margin-bottom: 50px;
 		width: 450px;
 		height: 80px;
@@ -468,8 +470,33 @@ body{
 			margin-left: 330px;
 		}
 	}
+	@media screen and (max-width: 470px){
+		.borderBlock{
+				width: 280px;
+				h2{
+					font-size: 20px;
+					margin-top: 31px;
+				}
+				.square{
+					margin-left: 230px;
+					margin-top: 2px;
+				}
+			}
+			.container{
+				h3{
+					font-size: 24px;
+				}
+				h4{
+					font-size: 20px;
+					padding:0 10px;
+				}
+				p{
+					font-size: 16px;
+				}
+			}
+	}
 	.brands{
-		margin-top: 80px;
+		margin-top: 130px;
 		width: 100%;
 		min-height: 140px;
 		border-top: solid #fff;
@@ -483,14 +510,55 @@ body{
 			align-items:center;
 			height: auto;
 			min-height: 140px;
+			svg{
+				opacity: 0.6;
+				transition: all 50ms ease-in-out;
+			}
+			svg:hover{
+				opacity: 1;
+			}
+		}
+		@media screen and (max-width: 766px){
+			.centerer{
+				flex-wrap: wrap;
+				svg{
+					margin:20px;
+				}
+			}
 		}
 	}
 	.container{
-		min-height: 580px;
 		background-image: url('../img/background2.png');
 		background-position: top center;
 		background-repeat:no-repeat;
 		background-size: cover;
+		.borderBottom{
+		max-width: 1185px;
+		margin: auto;
+		border-bottom: 1px solid #fff;
+		height: 30px;
+		span{
+			font-size: 24px;
+			font-family: 'OROSKO';
+			color:#fff;
+		    display: inline-block;
+		    position: relative;
+		    position:relative;
+		    left: 150px;
+		    top: 20px;
+		    background:#1b1b19;
+		    width: 70px;
+		    text-align: center;
+			}
+		}
+		@media screen and (max-width: 420px){
+			.borderBottom{
+				span{
+					left: 0;
+					margin-left: calc(50% - 35px);
+				}
+			}
+		}
 	}
 	h3{
 		margin-top: 130px;
@@ -515,6 +583,7 @@ body{
 		text-align: center;
 		font-family: Orkney;
 		font-size: 18px;
+		margin-bottom: 195px;
 	}
 }
 .prices{
@@ -610,7 +679,7 @@ body{
 						font-size: 18px;
 						font-family: Orkney;
 						text-transform: uppercase;
-						border-bottom: 1px solid #1f1f1e;
+						text-decoration: underline;
 						margin-top: 50px;
 
 					}
@@ -624,11 +693,8 @@ body{
 					hr{
 						border-bottom: 1px solid #fff;
 					}
-					a{
-						border-bottom: 1px solid #f6f6f6;
-					}
 					a:hover{
-						border-bottom: 1px solid #1f1f1f;
+						text-decoration: none;
 					}
 				}
 

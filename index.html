@@ -372,6 +372,9 @@
                     <h3>Testimonials </h3>
                     <h4>“Lalesuada penatibus felis aptent neque fringilla duis erast ridiculus, tristique massa. Elit hendrerit porttitor lorem dis rhoncus.”</h4>
                     <p>Lorraine Ipsum, Plymouth</p>
+                    <div class="borderBottom">
+                        <span>05</span>
+                    </div>
                 </div>
             </div>
             <!-- ///////////////////////////////////////// -->
@@ -545,7 +548,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#Portfolio">
+                    <a href="#Clients">
                         <div class="square"></div>
                         Our Clients 
                         <div class="square"></div> 
@@ -595,12 +598,12 @@
 			$(document).ready(function() {
 				if (document.documentElement.clientWidth > 766 && document.documentElement.clientHeight > 899) {
 	                $('#fullpage').fullpage({
-						anchors: ['FirstPage', 'About', 'Services', 'Portfolio', 'Prices', 'Contacts'],
+						anchors: ['FirstPage', 'About', 'Services', 'Portfolio', 'Clients', 'Prices', 'Contacts'],
 						verticalCentered: false,
 						navigation: true,
                         //scrollOverflow: true,
 						navigationPosition: 'right',
-						navigationTooltips: ['FirstPage', 'About', 'Services', 'Portfolio', 'Prices', 'Contacts'],
+						navigationTooltips: ['FirstPage', 'About', 'Services', 'Portfolio', 'Clients', 'Prices', 'Contacts'],
 	                    responsiveWidth: 740,
 	                    afterResponsive: function(isResponsive){
 	                        
