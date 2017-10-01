@@ -510,18 +510,18 @@ body{
 			align-items:center;
 			height: auto;
 			min-height: 140px;
-			svg{
+			img{
 				opacity: 0.6;
 				transition: all 50ms ease-in-out;
 			}
-			svg:hover{
+			img:hover{
 				opacity: 1;
 			}
 		}
 		@media screen and (max-width: 766px){
 			.centerer{
 				flex-wrap: wrap;
-				svg{
+				img{
 					margin:20px;
 				}
 			}
@@ -985,6 +985,7 @@ body{
 			position: relative;
 			left: -100px;
 			margin-bottom: 0;
+			margin-top: 2px;
 			li{
 				a{
 					width: 40px;
@@ -1079,6 +1080,7 @@ nav{
 			transition: 0.2s;
 			transition-delay: 0.2s;
 		}
+
 		.square:nth-child(1){
 			margin-right: 25px;
 		}
@@ -1104,19 +1106,34 @@ nav{
 					border: 1px solid;
 				}
 			}
-			a:hover,{
-				margin-right: 0;
-				font-size: 30px;
-				hr{
-					width: calc(52% + 75px);
-					border: 2px solid;
+			@media screen and (min-width: 769px){
+				a:hover,{
+					margin-right: 0;
+					font-size: 30px;
+					hr{
+						width: calc(52% + 75px);
+						border: 2px solid;
+					}
+					.square{
+						opacity: 1;
+					}
 				}
+			}
+			
+		}
+	}
+	@media screen and (max-width: 769px){
+			ul{
 				.square{
-					opacity: 1;
+					display: none;
+				}
+				li{
+					a{
+						margin-right: 120px;
+					}
 				}
 			}
 		}
-	}
 	////ul end////
 	@media screen and (max-width: 740px){
 		ul{
@@ -1126,7 +1143,7 @@ nav{
 				margin-bottom: 10px;
 				a{
 					font-size: 12px;
-					margin-right: 0;
+					margin-right: 25px;
 					hr{
 						width: calc(70% - 25px);
 					}
